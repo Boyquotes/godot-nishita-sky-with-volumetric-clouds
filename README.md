@@ -5,7 +5,7 @@ This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds]
 ## Screenshots (stars amplified for demonstration purposes)
 
 After Sunset
-![after sunset](Screenshots/after sunset.png)
+![after sunset](Screenshots/"after sunset".png)
 
 Atmosphere from 100km
 ![atmosphere from 100km](Screenshots/atmosphere from 100km.png)
