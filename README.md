@@ -67,7 +67,7 @@ To implement this sky into a project
 4. Click copy on the sky section of the "WorldEnvironment" node, and paste it into the "sky_material" section of the "NishitaSky" node. **THE MATERIALS MUST BE LINKED FOR THE SKY PARAMETERS TO BE THE SAME ON THE SCRIPT AND THE SHADER**
 5. Set the correct "sun_ground_height" on the "NishitaSky" node, this is the height of objects on the ground
 
-##TODO
+## Todo
 * Fix clouds "jumping" after some time
 * Remove bug: broken pixels sometimes appear on the edge of the atmosphere, when above the atmosphere
 * Clean up code
