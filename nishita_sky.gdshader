@@ -366,11 +366,7 @@ void sky() {
 											clamp(sqrt(dir.y), 0.0, 1.0)))*pow(E, -(max(avg_dist, 0.0)*cloud_distance_fade*0.0001));
 				vec3 raystep = dir * shelldist / steps;
 				volume = march(start, end, raystep, int(steps), sun_visible)*vec4(precomputed_sun_color, 1.0);
-
-				// Blend distant clouds into the sky
 				volume.xyz *= precomputed_sun_enabled;
-	//			col_stars *= 1.0-volume.a;
-	//			volume *= pow(E, -(max(avg_dist, 0.0)*cloud_distance_fade*0.001));
 
 				// Draw cloud shape
 				col = vec4(col.xyz*(1.0-volume.a)+volume.xyz, volume.a);
