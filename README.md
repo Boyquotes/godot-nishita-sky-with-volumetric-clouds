@@ -35,20 +35,20 @@ This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds]
 ![very low sun atmosphere from 100km](Screenshots/very%20low%20sun%20atmosphere%20from%20100km.png)
 
 ## Features
-* game-ready asset (although in alpha)
-* raymarched sky
-* raymarched clouds that move with the camera
-* different times of day by rotating the "NishitaSky" node
-* realistic lighting at different altitudes
-* a night sky
-* a directional light that takes on the color of the sun in the shader
-* all elements interact with each other: the night sky is blocked by the clouds and attenuated by the atmosphere
-* ability to configure quality of the shader and turn the clouds on/off
-* performance optimizations
+* Game-ready asset (although in alpha)
+* Raymarched sky
+* Raymarched clouds that move with the camera
+* Different times of day by rotating the "NishitaSky" node
+* Realistic lighting at different altitudes
+* A night sky
+* A directional light that takes on the color of the sun in the shader
+* All elements interact with each other: the night sky is blocked by the clouds and attenuated by the atmosphere
+* Ability to configure quality of the shader and turn the clouds on/off
+* Performance optimizations
 
 ## Limitations
-* performance heavy, especially with clouds on
-* the camera must remain below the clouds (but is clamped to cloud height if it goes higher), since the clouds do not actully exist
+* Performance heavy, especially with clouds on
+* The camera must remain below the clouds (but is clamped to cloud height if it goes higher), since the clouds do not actully exist
 
 ## Improvements
 * For the sky precompute the optical depth between the sun and an arbitrary point along the ray (from Nishita's paper)
