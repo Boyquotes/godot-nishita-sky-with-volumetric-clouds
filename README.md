@@ -68,7 +68,7 @@ To implement this sky into a project
 5. Set the correct "sun_ground_height" on the "NishitaSky" node, this is the height of objects on the ground
 
 ##TODO
-* Clouds "jump" after some time
+* Fix clouds "jumping" after some time
 * Remove bug: broken pixels sometimes appear on the edge of the atmosphere, when above the atmosphere
 * Clean up code
 * Rework sun saturation
