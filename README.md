@@ -53,19 +53,22 @@ This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds]
 ## Improvements
 * For the sky precompute the optical depth between the sun and an arbitrary point along the ray (from Nishita's paper)
 * Add multiple scattering to clouds and sky
-* Clouds "jump" after some time
 * Physical raytraced clouds, with better lighting (curently the clouds are evenly lit)
 * Better cloud density textures
 * Use cloud sample distance for cloud fog (currently uses distance to clouds)
 * Physically accurate ground material (currently the brightness is just a dot product to the sun)
 * Better sun color saturation (currently some hacks are nessary to get the expected sun brightness and saturation)
-* Remove bug: broken pixels sometimes appear on the edge of the atmosphere, when above the atmosphere
 
 ## How to Use
-
 To implement this sky into a project
 1. Copy the "NishitaSky" node from the main scene into a the project
 2. In the "NishitaSky" node set "sun_object_path" variable to the desired directional light, do not make this directional light a child of the "NishitaSky" node
 3. Create an "WorldEnvironment" node, set the sky material to the "nishita_sky" material
 4. Click copy on the sky section of the "WorldEnvironment" node, and paste it into the "sky_material" section of the "NishitaSky" node. **THE MATERIALS MUST BE LINKED FOR THE SKY PARAMETERS TO BE THE SAME ON THE SCRIPT AND THE SHADER**
 5. Set the correct "sun_ground_height" on the "NishitaSky" node, this is the height of objects on the ground
+
+##TODO
+* Clouds "jump" after some time
+* Remove bug: broken pixels sometimes appear on the edge of the atmosphere, when above the atmosphere
+* Clean up code
+* Rework sun saturation
