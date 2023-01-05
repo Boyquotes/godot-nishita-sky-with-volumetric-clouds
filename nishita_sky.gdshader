@@ -120,14 +120,12 @@ vec3[4] atmosphere(vec3 dir, vec3 pos){
 		vec3 Px = begin + dir * segmentLength * i;
 		float sampleHeight = length(Px) - earthRadius;
 
-		/* Get optical depth for light at this sample: */
 		float Hr_sample = exp(-sampleHeight / (rayleighScaleHeight * turbidity)) * segmentLength;
 		float Hm_sample = exp(-sampleHeight / (mieScaleHeight * turbidity)) * segmentLength;
 
 		opticalDepthR += Hr_sample;
 		opticalDepthM += Hm_sample;
 
-		//Get light depth to sun at this sample.
 		float opticalDepthLR = 0.0;
 		float opticalDepthLM = 0.0;
 
