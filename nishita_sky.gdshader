@@ -183,9 +183,6 @@ vec4[2] sample_sky(vec3 dir, vec3 pos){
 }
 
 
-// To disable clouds comment from  "Begin Cloud Parameters" to "End Cloud Parameters", and from "Begin Clouds" to "End Clouds"
-
-
 /* Begin Cloud Parameters */
 
 // Cloud Raymarching based on: A. Schneider. “The earthRadiusal-Time Volumetric Cloudscapes Of Horizon: Zero Dawn”. ACM SIGGRAPH. Los Angeles, CA: ACM SIGGRAPH, 2015. Web. 26 Aug. 2015.
