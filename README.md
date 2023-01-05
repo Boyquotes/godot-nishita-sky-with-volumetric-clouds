@@ -4,11 +4,20 @@ This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds]
 
 ## Screenshots (stars amplified for demonstration purposes)
 
+Day
+![day](Screenshots/day.png)
+
+Day Without Clouds
+![day without clouds](Screenshots/day%20without%20clouds.png)
+
+High Quality Day
+![high quality day](Screenshots/high%20quality%20day.png)
+
+Sunset
+![sunset](Screenshots/sunset.png)
+
 After Sunset
 ![after sunset](Screenshots/after%20sunset.png)
-
-Atmosphere from 100km
-![atmosphere from 100km](Screenshots/atmosphere%20from%20100km.png)
 
 Cloudy Night Sky After Sunset
 ![cloudy night sky after sunset](Screenshots/cloudy%20night%20sky%20after%20sunset.png)
@@ -16,20 +25,11 @@ Cloudy Night Sky After Sunset
 Cloudy Night Sky
 ![cloudy night sky](Screenshots/cloudy%20night%20sky.png)
 
-Day Without Clouds
-![day without clouds](Screenshots/day%20without%20clouds.png)
-
-Day
-![day](Screenshots/day.png)
-
-High Quality Day
-![high quality day](Screenshots/high%20quality%20day.png)
+Atmosphere from 100km
+![atmosphere from 100km](Screenshots/atmosphere%20from%20100km.png)
 
 Low Sun Atmosphere from 100km
 ![low sun atmosphere from 100km](Screenshots/low%20sun%20atmosphere%20from%20100km.png)
-
-Sunset
-![sunset](Screenshots/sunset.png)
 
 Very Low Sun Atmosphere From 100km
 ![very low sun atmosphere from 100km](Screenshots/very%20low%20sun%20atmosphere%20from%20100km.png)
