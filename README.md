@@ -49,6 +49,7 @@ This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds]
 ## Limitations
 * Performance heavy, especially with clouds on
 * The camera must remain below the clouds (but is clamped to cloud height if it goes higher), since the clouds do not actully exist
+* The clouds do not cast shadows or affect the brightness of the sun, for the reason above
 
 ## Improvements
 * For the sky precompute the optical depth between the sun and an arbitrary point along the ray (from Nishita's paper)
