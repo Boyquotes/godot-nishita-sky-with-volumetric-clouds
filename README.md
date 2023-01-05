@@ -5,34 +5,34 @@ This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds]
 ## Screenshots (stars amplified for demonstration purposes)
 
 After Sunset
-![after sunset](Screenshots/after sunset)
+![after sunset](Screenshots/after sunset.png)
 
 Atmosphere from 100km
-![atmosphere from 100km](Screenshots/atmosphere from 100km)
+![atmosphere from 100km](Screenshots/atmosphere from 100km.png)
 
 Cloudy Night Sky After Sunset
-![cloudy night sky after sunset](Screenshots/cloudy night sky after sunset)
+![cloudy night sky after sunset](Screenshots/cloudy night sky after sunset.png)
 
 Cloudy Night Sky
-![cloudy night sky](Screenshots/cloudy night sky)
+![cloudy night sky](Screenshots/cloudy night sky.png)
 
 Day Without Clouds
-![day without clouds](Screenshots/day without clouds)
+![day without clouds](Screenshots/day without clouds.png)
 
 Day
-![day](Screenshots/day)
+![day](Screenshots/day.png)
 
 High Quality Day
-![high quality day](Screenshots/high quality day)
+![high quality day](Screenshots/high quality day.png)
 
 Low Sun Atmosphere from 100km
-![low sun atmosphere from 100km](Screenshots/low sun atmosphere from 100km)
+![low sun atmosphere from 100km](Screenshots/low sun atmosphere from 100km.png)
 
 Sunset
-![sunset](Screenshots/sunset)
+![sunset](Screenshots/sunset.png)
 
 Very Low Sun Atmosphere From 100km
-![very low sun atmosphere from 100km](Screenshots/very low sun atmosphere from 100km)
+![very low sun atmosphere from 100km](Screenshots/very low sun atmosphere from 100km.png)
 
 ## Features
 * game-ready asset (although in alpha)
