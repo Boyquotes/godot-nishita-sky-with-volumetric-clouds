@@ -1,6 +1,6 @@
 # Nishita Sky With Volumetric Clouds
 
-This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds](https://github.com/clayjohn/godot-volumetric-cloud-demo) based on [a tutorial by scratch pixel](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/simulating-sky/simulating-colors-of-the-sky.html).
+This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds](https://github.com/clayjohn/godot-volumetric-cloud-demo) based on [a tutorial by scratch pixel](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/simulating-sky/simulating-colors-of-the-sky.html), which is recommended to read to understand what the sky parameters represent, when configuring the sky.
 
 ## Screenshots (stars amplified for demonstration purposes)
 
@@ -66,5 +66,5 @@ To implement this sky into a project
 1. Copy the "NishitaSky" node from the main scene into a the project
 2. In the "NishitaSky" node set "sun_object_path" variable to the desired directional light, do not make this directional light a child of the "NishitaSky" node
 3. Create an "WorldEnvironment" node, set the sky material to the "nishita_sky" material
-4. Click copy on the sky section of the "WorldEnvironment" node, and paste it into the "sky_material" section of the "NishitaSky" node **THE MATERIALS MUST BE LINKED FOR THE SKY PARAMETERS TO BE THE SAME ON THE SCRIPT AND THE SHADER**
+4. Click copy on the sky section of the "WorldEnvironment" node, and paste it into the "sky_material" section of the "NishitaSky" node. **THE MATERIALS MUST BE LINKED FOR THE SKY PARAMETERS TO BE THE SAME ON THE SCRIPT AND THE SHADER**
 5. Set the correct "sun_ground_height" on the "NishitaSky" node, this is the height of objects on the ground
