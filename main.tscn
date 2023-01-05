@@ -1,0 +1,98 @@
+[gd_scene load_steps=14 format=3 uid="uid://dkucbagorq5tm"]
+
+[ext_resource type="Script" path="res://NishitaSky.gd" id="1_jf2ik"]
+[ext_resource type="Material" uid="uid://b45abiagp8tuf" path="res://nishita_sky.tres" id="2_txcwo"]
+
+[sub_resource type="Sky" id="Sky_dunn8"]
+sky_material = ExtResource("2_txcwo")
+
+[sub_resource type="Environment" id="Environment_fb38y"]
+background_mode = 2
+sky = SubResource("Sky_dunn8")
+tonemap_mode = 2
+tonemap_white = 16.0
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+glow_enabled = true
+glow_levels/1 = 16.0
+glow_levels/2 = 8.0
+glow_levels/3 = 4.0
+glow_levels/4 = 2.0
+glow_levels/6 = 0.5
+glow_levels/7 = 0.25
+glow_normalized = true
+glow_bloom = 1.0
+glow_hdr_threshold = 0.0
+
+[sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_5vtap"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7tyt4"]
+size = Vector2(10, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_34618"]
+albedo_color = Color(0.415686, 0.415686, 0.415686, 1)
+roughness = 0.5
+
+[sub_resource type="BoxMesh" id="BoxMesh_ge2je"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uvxi8"]
+albedo_color = Color(0.85098, 0.85098, 0.85098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wpfx4"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7vlk3"]
+albedo_color = Color(0.8, 0.8, 0.8, 1)
+metallic = 1.0
+roughness = 0.21
+
+[sub_resource type="BoxMesh" id="BoxMesh_glms8"]
+size = Vector3(1, 2, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_70bv0"]
+albedo_color = Color(0.286275, 0.701961, 0.294118, 1)
+
+[node name="Main" type="Node3D"]
+
+[node name="NishitaSky" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.976077, 0.217392, 0, -0.217392, 0.976077, 0, 0, 0)
+script = ExtResource("1_jf2ik")
+sky_material = ExtResource("2_txcwo")
+sun_object_path = NodePath("../DirectionalLight3D")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.976084, 0.217394, 0, -0.217394, 0.976084, 0, 0, 0)
+light_color = Color(0.619197, 0.62214, 0.599627, 1)
+light_angular_distance = 0.53
+shadow_enabled = true
+directional_shadow_blend_splits = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fb38y")
+camera_attributes = SubResource("CameraAttributesPhysical_5vtap")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_7tyt4")
+surface_material_override/0 = SubResource("StandardMaterial3D_34618")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -2)
+mesh = SubResource("BoxMesh_ge2je")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_uvxi8")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 2)
+mesh = SubResource("BoxMesh_wpfx4")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_7vlk3")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -1)
+mesh = SubResource("BoxMesh_glms8")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_70bv0")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.741976, 0, 0.670427, 0, 1, 0, -0.670427, 0, -0.741976, 0, 0, 0)
