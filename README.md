@@ -59,6 +59,7 @@ This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds]
 * Use cloud sample distance for cloud fog (currently uses distance to clouds)
 * Physically accurate ground material (currently the brightness is just a dot product to the sun)
 * Better sun color saturation (currently some hacks are nessary to get the expected sun brightness and saturation)
+* Remove bug: broken pixels sometimes appear on the edge of the atmosphere, when above the atmosphere
 
 ## How to Use
 
