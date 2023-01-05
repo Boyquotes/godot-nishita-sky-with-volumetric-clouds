@@ -41,6 +41,7 @@ This is a Nishita sky shader for godot 4.0, with [Clay John's volumetric clouds]
 * Different times of day by rotating the "NishitaSky" node
 * Realistic lighting at different altitudes
 * A night sky
+* Solar disk is attenuated by the atmosphere
 * A directional light that takes on the color of the sun in the shader
 * All elements interact with each other: the night sky is blocked by the clouds and attenuated by the atmosphere
 * Ability to configure quality of the shader and turn the clouds on/off
