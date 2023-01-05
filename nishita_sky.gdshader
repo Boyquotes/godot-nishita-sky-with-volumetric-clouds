@@ -244,7 +244,7 @@ float densityHeightGradient(float heightFrac, float cloudType) {
 	return smoothstep(cloudGradient.x, cloudGradient.y, heightFrac) - smoothstep(cloudGradient.z, cloudGradient.w, heightFrac);
 }
 
-// earthRadiusturns density at a given point
+// Returns density at a given point
 // Heavily based on method from Schneider
 float density(vec3 pip, vec3 weather, float mip) {
 	float time = mod(TIME, 100.0);
